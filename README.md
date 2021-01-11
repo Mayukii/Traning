@@ -1,2 +1,2 @@
-# Traning
-Traing101
+# Tranning
+Trainng101
