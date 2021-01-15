@@ -33,10 +33,12 @@ public class TrainningServicelmpi implements TrainningService {
         String name = request.getName();
 
         List<StudentInfoDto> result = new ArrayList<>();
+        if (studentInfoDtoList.isEmpty()){
+            return result;
+        }
         for (StudentInfoDto studentInfoDto : studentInfoDtoList) {
             if (name.equalsIgnoreCase(studentInfoDto.getName())) {
                 result.add(studentInfoDto);
-                return result;
             }
         }
         return result;
